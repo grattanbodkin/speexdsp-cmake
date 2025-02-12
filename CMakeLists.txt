@@ -43,5 +43,5 @@ add_library(speexdsp STATIC ${SPEEXDSP_SOURCE}/resample.c
         ${SPEEXDSP_SOURCE}/preprocess.c
         ${SPEEXDSP_SOURCE}/scal.c
         ${SPEEXDSP_SOURCE}/smallft.c)
-target_include_directories(speexdsp PUBLIC ${SPEEXDSP_FOLDER}/include PRIVATE ${SPEEXDSP_FOLDER} ${SPEEXDSP_SOURCE} ${SPEEXDSP_FOLDER}/include ${SPEEXDSP_FOLDER}/include/speex)
+target_include_directories(speexdsp PUBLIC ${SPEEXDSP_FOLDER}/include ${SPEEXDSP_FOLDER} ${SPEEXDSP_SOURCE} ${SPEEXDSP_FOLDER}/include/speex)
 target_compile_options(speexdsp PRIVATE "-DHAVE_CONFIG_H")
